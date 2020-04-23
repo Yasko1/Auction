@@ -1,0 +1,188 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, serif;
+    padding: 10px;
+    background: #f1f1f1 url(/img/background-img.jpg);
+    background-size: cover;
+}
+
+/* Style the top navigation bar */
+header {
+    overflow: hidden;
+    background-color: #3c4168;
+    border-radius: 0 0 5px 5px;
+    opacity: 0.9;
+}
+
+header a {
+    float: right;
+    background-color: #393E46;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+/* Change color on hover */
+header a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+.leftcolumn {
+    float: left;
+    width: 25%;
+    padding: 20px;
+    background-color: #f2f2f2;
+}
+
+/* Right column */
+.rightcolumn {
+    float: left;
+    width: 75%;
+    background-color: #f2f2f2;
+    padding: 20px;
+
+}
+
+.container {
+    margin-top: 20px;
+    background-color: white;
+    padding: 20px;
+    opacity: 0.9;
+}
+
+.container:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.link {
+    width: 100%;
+    float: left;
+    background-color: #393E46;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    margin: 20px 0;
+    text-decoration: none;
+}
+
+.banLink {
+    width: 100%;
+    float: left;
+    background-color: #FE2E2E;
+    opacity: 0.8;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 10px 12px;
+    text-decoration: none;
+}
+
+.unbanLink {
+    width: 100%;
+    float: left;
+    background-color: #228B22;
+    opacity: 0.8;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 10px 12px;
+    text-decoration: none;
+}
+
+.banLink:hover {
+    opacity: 1;
+}
+
+.unbanLink:hover {
+    opacity: 1;
+}
+
+div a {
+    text-decoration: none;
+}
+
+/* Footer */
+footer {
+    text-align: left;
+    margin-top: 20px;
+    overflow: hidden;
+    background-color: #3c4168;
+    border-radius: 5px 5px 0 0;
+    opacity: 0.9;
+}
+
+footer h4 {
+    color: #cebfe19c;
+    padding: 0 15px;
+}
+footer a{
+    color: #cebfe19c;
+    text-decoration: none;
+}
+footer a:hover{
+    color: #e0d0f3f5;
+    text-transform: uppercase;
+}
+input[type=text], input[type=datetime-local], select {
+    width: 100%;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+}
+
+label {
+    padding: 4px;
+    display: inline-block;
+}
+
+.col-25 {
+    float: left;
+    width: 25%;
+    margin-bottom: 6px;
+}
+
+.col-75 {
+    margin-top: 6px;
+    float: left;
+    width: 75%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+    .col-25, .col-75, .col-15, .col-30, input[type=submit] {
+        width: 100%;
+        margin-top: 0;
+    }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+    .topnav a {
+        float: none;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .rightcolumn, .leftcolumn {
+        width: 100%;
+        margin-top: 0;
+    }
+}
